@@ -10,7 +10,7 @@ import { useTheme } from 'vuetify'
 export const useVueTorrentStore = defineStore(
   'vuetorrent',
   () => {
-    const language = ref('en')
+    const language = ref('zh-Hans')
     const vuetorrentTheme = ref<VuetorrentTheme>(VuetorrentTheme.SYSTEM)
     const showFreeSpace = ref(true)
     const showSpeedGraph = ref(true)
@@ -267,7 +267,7 @@ export const useVueTorrentStore = defineStore(
       toggleDoneGridProperty,
       toggleTableProperty,
       $reset: () => {
-        language.value = 'en'
+        language.value = 'zh-Hans'
         vuetorrentTheme.value = VuetorrentTheme.SYSTEM
         showFreeSpace.value = true
         showSpeedGraph.value = true
